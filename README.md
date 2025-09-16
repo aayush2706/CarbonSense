@@ -32,7 +32,7 @@
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/carbon-sense.git
+git clone https://github.com/aryangiri03/CarbonSense.git
 cd carbon-sense
 ```
 
