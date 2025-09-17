@@ -105,14 +105,20 @@ print("Predicted CO2 Emission:", predict_emission(40, 5), "g/km")
 ```
 carbon-sense/
 │── app.py               # Streamlit dashboard
-│── model.pkl            # Trained ML model
-│── requirements.txt     # Dependencies
-│── utils/
-│   ├── ocr.py           # License plate OCR utils
-│   ├── db.py            # MongoDB helper functions
-│   ├── sms.py           # Twilio SMS sender
-│   └── predictor.py     # ML prediction logic
-│── notebooks/           # Jupyter notebooks for demo & training
+│── carbonsense.pkl      # Trained ML model
+│── models/
+│   ├── PetrolPumpVisits.js # Maintains record of fuel station visits and fills.
+│   ├── PucDetails.js    # Fetches the PUC status and details for vehicles.
+│   ├── Vehicle.js       # Stored all details of vehicles
+│   └── VehicleMetrics.js # Stores all the metrics for the vehicles
+│── seed.js              # Feed sample data to database.
+│── notebooks/
+|    └──CarbonSense.ipynb  # Jupyter notebooks for training the model.
+│── update.csv # preprocessed csv stage-1
+│── preprocessed.csv # Final preprocessed csv.
+│── camera.py # realtime number plate detection via camera
+│── message.py # message generator through llm
+│── .env   # environmental variables setup
 │── README.md
 ```
 
@@ -147,3 +153,9 @@ This project is licensed under the MIT License.
 ---
 
 💡 *Carbon Sense – Because every drop of fuel counts, and so does every gram of CO₂.*
+
+## Team:
+Aayush Gattani
+Aryan Giri
+Harshal Bankhele
+Vedant Manvelikar
